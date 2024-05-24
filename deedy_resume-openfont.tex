@@ -1,0 +1,356 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \documentclass[]{deedy-resume-openfont}
+
+% \usepackage{fancyhdr}
+
+ 
+% \pagestyle{fancy}
+% \fancyhf{}
+ 
+% \begin{document}
+
+\documentclass{deedy-resume-openfont}
+
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{amsmath}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+% % Changing the font style
+% \renewcommand{\familydefault}{\sfdefault}
+% \usepackage{helvet}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+\lastupdated
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \namesection{RUDHRESH}{S}{
+
+
+% \href{https://www.iamrudhresh.com/}
+% {\underline{\textbf{github.com/iamrudhresh}}} |
+% \href{mailto:officialrudhresh@gmail.com}{officialrudhresh@gmail.com} | 
+% \href{tel:735-825-8860}{\textbf{+91 7358258860}} | \href{https://www.linkedin.com/in/iamrudhresh/}{\underline{linkedin.com/in/iamrudhresh}}  $  $ \href{https://www.github.com/iamrudhresh/}{\underline{github.com/iamrudhresh}}
+% }
+
+\namesection{RUDHRESH}{S}{
+
+\href{https://www.github.com/iamrudhresh/}{\faGithub $ $ \underline{github.com/iamrudhresh}} \hspace{1mm} 
+\href{https://www.iamrudhresh.com/}{\faCode $ $ \underline{iamrudhresh.com}} \hspace{1mm} 
+\href{https://www.linkedin.com/in/iamrudhresh/}{\faLinkedinSquare $ $ \underline{linkedin.com/in/iamrudhresh}} \\ 
+\href{mailto:officialrudhresh@gmail.com}{\faEnvelope $ $ \underline{officialrudhresh@gmail.com}}  \hspace{1mm} 
+\href{tel:735-825-8860}{\faPhone $ $ \underline{+91 7358258860}}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{CHENNAI INSTITUTE OF}
+\subsection{TECHNOLOGY}
+\descript{B.E. Computer Science}
+\location{Nov 2022 - Present | Chennai, TN}
+
+\location{CGPA: 8.74 / 10   (as of 1st to 3rd sem)}
+
+\sectionsep
+
+\subsection{P.A.K.P.H.S.S}
+\descript{Senior Secondary}
+\location{June 2020 - May 2022 |  Chennai, TN}
+\location{Score: 94\%}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{LANGUAGES}
+
+\textbullet{} C/C++
+\textbullet{} Python 
+\textbullet{} Java 
+\textbullet{} SQL
+
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\subsection{Frontend}
+\textbullet{} HTML
+\textbullet{} CSS 
+\textbullet{} TailwindCSS
+\textbullet{} JavaScript
+\textbullet{} React.js 
+
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\subsection{Backend}
+\textbullet{} Node.js
+\textbullet{} Express.js
+\textbullet{} MongoDB \\
+\textbullet{} Prisma
+\textbullet{} MySQL
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\subsection{Devops}
+\textbullet{} Docker
+\textbullet{} Kubernetes
+
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\subsection{TOOLS/PLATFORMS}
+\textbullet{} Git
+\textbullet{} Github
+\textbullet{} VS Code  
+\textbullet{} Postman \\
+\textbullet{} IntelliJ IDEA
+\textbullet{} Pycharm  
+\textbullet{} Linux
+
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COIDNG LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{coding profiles} 
+Leetcode:// \href{https://leetcode.com/iamrudhresh/}{\bf iamrudhresh} \\
+GeeksforGeeks:// \href{https://auth.geeksforgeeks.org/user/iamrudhresh}{\bf iamrudhresh} \\
+
+Coding Ninjas:// \href{https://www.codingninjas.com/studio/profile/iamrudhresh}{\bf iamrudhresh} \\
+CodeChef:// \href{https://www.codechef.com/users/rudhresh}{\bf rudhresh} \\
+% Skillrack:// \href{https://www.skillrack.com/faces/resume.xhtml?id=409556&key=iamrudhresh}{\bf iamrudhresh} \\
+
+HackerRank:// \href{https://www.hackerrank.com/iamrudhresh?hr_r=1}{\bf iamrudhresh} \\
+
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+\textbullet{} Data Structures and Algorithms \\
+\textbullet{} Database Management Systems \\
+\textbullet{} Object Oriented Programming \\
+\textbullet{} Computer Networks \\
+\textbullet{} Operating Systems \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Leadership} 
+\textbullet{} Microsoft | MLSA \\
+\textbullet{} GeeksforGeeks | Campus Ambassador \\
+\textbullet{} Coding Ninjas | Campus Ambassador \\
+\textbullet{} HackerEarth | Campus Ambassador
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+
+\runsubsection{\href{https://drive.google.com/file/d/1ozVzTATOvDKfR1J_jVBCEw0ZRMWUBLAG/view?usp=sharing}{Innovate Intern}}
+\descript{| Full Stack Developement Intern (Remote) }
+\location{May 2024 - Present | Chennai, Tamilnadu, India}
+\begin{tightemize} 
+\vspace{\topsep}
+\item Mastered full-stack web development, seamlessly integrating front-end and back-end tasks. 
+\item Employed HTML5, CSS3, JavaScript, React.js for front-end and Node.js, MongoDB for back-end to develop responsive web applications with dynamic functionality
+\end{tightemize}
+
+\vspace{\topsep} 
+
+\runsubsection{\href{https://drive.google.com/file/d/1ozVzTATOvDKfR1J_jVBCEw0ZRMWUBLAG/view?usp=sharing}{Skill Vertex}}
+\descript{| Web Developer Intern (Remote) }
+\location{May 2023 - June 2023 | Bengaluru, Karnataka, India}
+\begin{tightemize} 
+
+\item Mastered full-stack web development, seamlessly integrating front-end and back-end tasks. 
+\item Employed HTML5, CSS3, JavaScript, React.js for front-end and Node.js, MongoDB for back-end to develop responsive web applications with dynamic functionality.
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{projects}
+
+\href{https://github.com/iamrudhresh/FakeStore-Project}{\bf \runsubsection{E-Commerce Website \faExternalLink}}
+\descript{| HTML, CSS, JavaScript, ReactJS}
+\begin{tightemize}
+\item Built an e-commerce platform using React.js and Axios for seamless browsing and purchasing.
+\item Developed a shopping cart system in React, ensuring smooth product management and persistence.
+\item Designed and implemented a detailed product details page, enhancing user engagement and information accessibility.
+\end{tightemize}
+
+\vspace{\topsep} 
+
+\href{https://github.com/iamrudhresh/MyWebResume}{\bf \runsubsection{Web Resume \faExternalLink}}
+\descript{| HTML, CSS, JavaScript, BootStrap}
+\begin{tightemize}
+\item Orchestrating skills, experiences, and passion into a captivating website resume.
+\item Step into the digital realm of my online resume, where innovation converges with professionalism.
+\end{tightemize}
+
+\vspace{\topsep} 
+
+\href{https://github.com/iamrudhresh/Github-User-Search}{\bf \runsubsection{Github User Search \faExternalLink}}
+\descript{| HTML, CSS, JavaScript}
+\begin{tightemize}
+\item GitHub User Search is a React-based web application that enables users to search for GitHub users by their username. 
+\item It utilizes the GitHub API to fetch user data based on the provided query.
+\end{tightemize}
+
+
+\sectionsep
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    certici
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{CERTIFICATIONS}
+%vspace{\topsep} % Hacky fix for awkward extra vertical space
+%begin{tightemize}
+%\item  The Complete SQL Bootcamp: Go from zero to Hero – Udemy 
+%\item  Database Management System - NPTEL 
+%\item Data Structures and Algorithms (Ongoing) - GeeksforGeeks
+%\item Mastering Java Programming (Ongoing) - GeeksforGeeks
+%\end{tightemize}
+
+%\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENTS} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item LeetCode | 280+ Problems Solved | 2 star coder | Max Rating (1420) 
+\item GeeksForGeeks | 700+ Problems Solved | Institute Rank 4
+\item Coding Ninjas | 1700+ Problems Solved | Max Rating (2574) | Rank 1
+
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{OTHER ACHIEVEMENTS} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item 8.4k+ Followers and 650k+ Content Views on @LinkedIn \\
+\item 100+ Certifications in DSA and Development \href{https://www.linkedin.com/in/iamrudhresh/details/certifications/}{[\textbf{Link}]\bf} \\
+% \item I have achieved certifications and won prizes at numerous technical symposiums. \href{https://docs.google.com/document/d/1-R3CSovejTS-P8KkTqYkKTtTpTjYoq4JHvLPT6WLXbA/edit?usp=sharing}{[\textbf{Link}]\bf } 
+
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
+
+
+
